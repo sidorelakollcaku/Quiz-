@@ -1,1 +1,313 @@
+<!DOCTYPE html>
+<html lang="en-us">
 
+	<head>
+
+		<meta charset="UTF-8">
+    <title>QUIZ!</title>
+    
+		<!-- Link to Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Mansalva|Open+Sans&display=swap" rel="stylesheet">
+		<!-- Link to CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link to CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to Bootstrap Javascript CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Link to jQuery CDN -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Link to Javascript Logic -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <!-- <script type="text/javascript" src="assets/javascript/questions.js"></script> -->
+    
+  </head>
+  
+  <body>
+    <!-- HEADER/QUESTIONS DIV -->
+    <!-- Header -->
+    <div class="container-fluid" id="header">
+      <div class="jumbotron jumbotron-fluid ">
+        <div class="container">
+          <hr>
+        </div>
+      </div>
+    </div>
+
+    <!-- Start Button -->
+    <div class="container">
+        <div class="row">
+          <div class="col">
+            <div></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-secondary btn-lg" id="play">START</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <div></div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Timer -->
+    <div class="timer-container" id="timer"></div>
+
+    <hr>
+    
+    <!-- Question Container -->
+    <div class="container question-container">
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 1 -->
+          <div class="questions" id="question1">1.What sort of animal is Walt Disney's Dumbo?</div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioGroup1" id="inlineRadio1-q1" value="correct">
+              <label class="form-check-label" for="inlineRadio1">Deer</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioGroup1" id="inlineRadio2-q1" value="incorrect">
+              <label class="form-check-label" for="inlineRadio2">Rabbit</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioGroup1" id="inlineRadio3-q1" value="incorrect">
+              <label class="form-check-label" for="inlineRadio3">Elephant</label>
+          </div>
+        </div>
+      </div>
+
+      <hr class="blue">
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 2 -->
+          <div class="questions" id="question2">2.What was the name of the Spanish waiter in the TV sitcom "Fawlty Towers"?
+        </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup2" id="inlineRadio1-q2" value="incorrect">
+            <label class="form-check-label" for="inlineRadio1">Manuel</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup2" id="inlineRadio2-q2" value="correct">
+            <label class="form-check-label" for="inlineRadio2">Pedro</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup2" id="inlineRadio3-q2" value="incorrect">
+            <label class="form-check-label" for="inlineRadio3">Alfonso</label>
+          </div>
+        </div>
+      </div>
+      
+      <hr class="red">
+    
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 3 -->
+          <div class="questions" id="question3">3.Which battles took place between the Royal Houses of York and Lancaster?
+            </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup3" id="inlineRadio1-q3" value="incorrect">
+            <label class="form-check-label" for="inlineRadio1">Hundred Years War</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup3" id="inlineRadio2-q3" value="correct">
+            <label class="form-check-label" for="inlineRadio2">English Civil War</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup3" id="inlineRadio3-q3" value="incorrect">
+            <label class="form-check-label" for="inlineRadio3">War of the Roses</label>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="yellow">
+      
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 4 -->
+          <div class="questions" id="question4">4.Which former Beatle narrated the TV adventures of Thomas the Tank Engine?</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup4" id="inlineRadio1-q4" value="incorrect">
+            <label class="form-check-label" for="inlineRadio1">John Lennon</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup4" id="inlineRadio2-q4" value="incorrect">
+            <label class="form-check-label" for="inlineRadio2">Ringo Starr</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup4" id="inlineRadio3-q4" value="correct">
+            <label class="form-check-label" for="inlineRadio3">Paul McCartney</label>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="blue">
+    
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 5 -->
+          <div class="questions" id="question5">5. What fake name does Phoebe use when she wants to remain anonymous?</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup5" id="inlineRadio1-q5" value="correct">
+            <label class="form-check-label" for="inlineRadio1">Regina Phalange</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup5" id="inlineRadio2-q5" value="incorrect">
+            <label class="form-check-label" for="inlineRadio2">Bonnie Riddle</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup5" id="inlineRadio3-q5" value="incorrect">
+            <label class="form-check-label" for="inlineRadio3">Anastasia Beaverhausen</label>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="red">
+    
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 6 -->
+          <div class="questions" id="question6">6. Monica and Chandler met on Thanksgiving in 1987. She pursued her career as a chef because Chandler complimented her on which dish?</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup6" id="inlineRadio1-q6" value="correct">
+            <label class="form-check-label" for="inlineRadio1">Mac & Cheese</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup6" id="inlineRadio2-q6" value="incorrect">
+            <label class="form-check-label" for="inlineRadio2">Stuffing</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup6" id="inlineRadio3-q6" value="incorrect">
+            <label class="form-check-label" for="inlineRadio3">Green Bean Casserole</label>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="yellow">
+    
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 7 -->
+          <div class="questions" id="question7">7. When Ross and Rachel were "on a break," Ross slept with Chloe. Where does she work?</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup7" id="inlineRadio1-q7" value="incorrect">
+            <label class="form-check-label" for="inlineRadio1">Domino's</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup7" id="inlineRadio2-q7" value="correct">
+            <label class="form-check-label" for="inlineRadio2">Xerox</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup7" id="inlineRadio3-q7" value="incorrect">
+            <label class="form-check-label" for="inlineRadio3">Microsoft</label>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="blue">
+    
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 8 -->
+          <div class="questions" id="question8">8. What’s Joey’s penguin’s name?</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup8" id="inlineRadio1-q8" value="correct">
+            <label class="form-check-label" for="inlineRadio1">Huggsy</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup8" id="inlineRadio2-q8" value="incorrect">
+            <label class="form-check-label" for="inlineRadio2">Waddle</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup8" id="inlineRadio3-q8" value="incorrect">
+            <label class="form-check-label" for="inlineRadio3">Snowflake</label>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="red">
+    
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 9 -->
+          <div class="questions" id="question9">9. Janice gets married twice. What’s was her first husband’s name?</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup9" id="inlineRadio1-q9" value="incorrect">
+            <label class="form-check-label" for="inlineRadio1">Chandler Bing</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup9" id="inlineRadio2-q9" value="correct">
+            <label class="form-check-label" for="inlineRadio2">Gary Litman</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup9" id="inlineRadio3-q9" value="incorrect">
+            <label class="form-check-label" for="inlineRadio3">Rob Baileystock</label>
+          </div>
+        </div>
+      </div>
+    
+      <hr class="yellow">
+    
+      <div class="row">
+        <div class="col-12">
+          <!-- Question 10 -->
+          <div class="questions" id="question10">10. What’s the name of the 1950s-themed diner where Monica worked as a waitress?</div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup10" id="inlineRadio1-q10" value="incorrect">
+            <label class="form-check-label" for="inlineRadio1">Marilyn & Audrey</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup10" id="inlineRadio2-q10" value="incorrect">
+            <label class="form-check-label" for="inlineRadio2">Central Perk</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioGroup10" id="inlineRadio3-q10" value="correct">
+            <label class="form-check-label" for="inlineRadio3">Moondance Diner</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Done Button -->
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col justify-content-center">
+          <button type="button" class="btn btn-secondary btn-lg" id="done">DONE</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+            <div></div>
+        </div>
+      </div>
+    </div>
+    
+    <hr>
+
+      <!-- STATS DIV -->
+      <div class="container" id="stats-container">
+        <div class="jumbotron jumbotron-fluid justify-content-center">
+          <div class="container">
+            <h1 class="display-4 stats-display">STATS</h1>
+            <p class="lead" id="number-correct">CORRECT: </p>
+            <p class="lead" id="number-incorrect">INCORRECT: </p>
+            <p class="lead"id="number-unanswered">UNANSWERED: </p>
+            <p class="lead" id="refresh">| REFRESH THE PAGE TO PLAY AGAIN. |</p>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
